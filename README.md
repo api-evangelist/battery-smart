@@ -42,5 +42,8 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Battery Smart is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.nasdaqprivatemarket.com/
+Battery Smart is India's largest battery-swapping network for electric two- and three-wheelers, founded in 2019 by Pulkit Khurana and Siddharth Sikka and operated from New Delhi by Upgrid Solutions Private Limited and Upgrid Electrilease Private Limited. Local businesses host swap points where a driver exchanges a depleted lithium-ion pack for a charged one in roughly two minutes, paying per swap instead of buying the battery with the vehicle.
+
+As of this profile, Battery Smart publishes **no public API, developer portal, API reference, SDK or machine-readable specification**. Its software ships only as the Battery Smart Driver and Battery Smart Partner Android apps, backed by an undocumented production API host at `api.upgrid.in`.
+
+- https://www.batterysmart.in/

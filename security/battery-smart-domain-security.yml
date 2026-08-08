@@ -1,0 +1,46 @@
+generated: '2026-08-06'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: www.batterysmart.in
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Nov 18 23:59:59 2026 GMT
+  hsts: false
+- host: api.upgrid.in
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Nov 18 23:59:59 2026 GMT
+  hsts: true
+  hsts_max_age: 31536000
+  hsts_include_subdomains: true
+  note: >-
+    Production API host behind the Battery Smart Driver and Partner mobile apps;
+    root returns {"message":"Battery Smart API"}. Discovered via Certificate
+    Transparency, not from any published apis.yml/OpenAPI pointer — Battery Smart
+    publishes no API documentation for it. Probed anonymously; no operations
+    enumerated.
+  security_headers:
+    content_security_policy: "default-src 'none';base-uri 'none';form-action 'none';frame-ancestors 'none'"
+    x_content_type_options: nosniff
+    x_frame_options: DENY
+    referrer_policy: no-referrer
+    cross_origin_opener_policy: same-origin
+    access_control_allow_origin: '*'
+  server: Express (X-Powered-By header exposed)
+domains:
+- domain: batterysmart.in
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: quarantine
+- domain: upgrid.in
+  dnssec: false
+  caa: []
+  spf: true
+  spf_record: v=spf1 include:_spf.google.com ~all
+  dmarc: false
+  note: >-
+    Battery Smart's engineering domain (Upgrid Solutions Private Limited). No DMARC
+    record published at _dmarc.upgrid.in and no CAA record on the zone.
