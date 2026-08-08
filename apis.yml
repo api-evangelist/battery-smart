@@ -1,17 +1,45 @@
 aid: battery-smart
 name: Battery Smart
-description: 'Battery Smart is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Battery Smart is India''s largest battery-swapping network for electric two-
+  and three-wheelers, founded in 2019 by Pulkit Khurana and Siddharth Sikka and operated
+  from New Delhi by Upgrid Solutions Private Limited and Upgrid Electrilease Private
+  Limited. It runs an asset-light, partner-led model: local businesses — kirana stores,
+  petrol pumps and neighbourhood shops — host swap points where a driver exchanges a
+  depleted lithium-ion pack for a charged one in roughly two minutes and pays per swap
+  instead of buying the battery with the vehicle, which removes the single largest cost
+  from an electric two- or three-wheeler. The network is concentrated in Delhi NCR,
+  Mumbai, Bengaluru, Hyderabad, Jaipur and Lucknow, and the company has raised across
+  eleven rounds including a USD 65 million Series B led by LeapFrog Investments with
+  MUFG Bank, Panasonic, Ecosystem Integrity Fund, Blume Ventures and British
+  International Investment participating, plus a USD 15 million debt round with Mirova
+  in April 2026. Battery Smart''s software ships only as end-user Android applications
+  — Battery Smart Driver and Battery Smart Partner — backed by a production API host at
+  api.upgrid.in that self-identifies as the "Battery Smart API". As of this profile the
+  company publishes no developer portal, API reference, SDK, webhook catalog or
+  machine-readable specification of any kind.'
+image: https://www.batterysmart.in/_next/static/media/logo.9f0b8870.webp
 url: https://raw.githubusercontent.com/api-evangelist/battery-smart/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+x-legal-entity: Upgrid Solutions Private Limited
+x-tier: profiled
+x-tier-reason: enrichment-pass-no-api-surface
 specificationVersion: '0.20'
 created: '2026-08-06'
 modified: '2026-08-06'
 tags:
 - Company
+- Battery Swapping
+- Electric Vehicles
+- EV Infrastructure
+- Battery as a Service
+- Energy
+- Clean Energy
+- Mobility
+- Two Wheelers
+- Three Wheelers
+- Last Mile Delivery
+- India
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +47,81 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/battery-smart-domain-security.yml
+- type: LLMsTxt
+  url: llms/battery-smart-llms.txt
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://www.batterysmart.in/
+- type: About
+  url: https://www.batterysmart.in/aboutUs
+- type: Support
+  url: https://www.batterysmart.in/contactUs
+- type: Careers
+  url: https://www.batterysmart.in/careers
+- type: Blog
+  url: https://www.batterysmart.in/articles
+- type: EngineeringBlog
+  url: https://batterysmart.tech/
+- type: Resources
+  url: https://www.batterysmart.in/resources
+- type: PressReleases
+  url: https://www.batterysmart.in/media
+- type: Awards
+  url: https://www.batterysmart.in/awards
+- type: Partners
+  url: https://www.batterysmart.in/partners
+- type: Fleets
+  url: https://www.batterysmart.in/fleets
+- type: Safety
+  url: https://www.batterysmart.in/safetyCenter
+- type: ESG
+  url: https://www.batterysmart.in/esg
+- type: ImpactReport
+  url: https://www.batterysmart.in/impact-report-2025
+- type: TermsOfService
+  url: https://www.batterysmart.in/tnc
+- type: PrivacyPolicy
+  url: https://www.batterysmart.in/privacy
+- type: RefundPolicy
+  url: https://www.batterysmart.in/refund
+- type: AndroidApp
+  url: https://play.google.com/store/apps/details?id=com.batterysmart.driver
+- type: AndroidApp
+  url: https://play.google.com/store/apps/details?id=com.batterysmart.partner
+- type: Twitter
+  url: https://twitter.com/BatterySmartIN
+- type: LinkedIn
+  url: https://www.linkedin.com/company/batterysmart/
+- type: YouTube
+  url: https://www.youtube.com/@BatterySmartIN
+x-enrichment:
+  date: '2026-08-06'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    Battery Smart runs a real production API — api.upgrid.in answers
+    {"message":"Battery Smart API"} and a /health check for SQL, Redis, Kafka and Mongo,
+    discovered only through Certificate Transparency on the Upgrid engineering domain —
+    but it exists purely to serve the Driver and Partner Android apps: every spec path on
+    that host returns a JSON 404, batterysmart.in has no /developers, no api./docs./developer.
+    subdomain in DNS at all, and the company publishes no reference, SDK, webhook catalog
+    or specification anywhere.
+  evidence:
+  - url: https://api.upgrid.in/
+    status: 200
+  - url: https://api.upgrid.in/openapi.json
+    status: 404
+  - url: https://www.batterysmart.in/openapi.json
+    status: 404
+  - url: https://www.batterysmart.in/llms.txt
+    status: 404
+  - url: https://www.batterysmart.in/.well-known/agent-card.json
+    status: 404
+  - url: https://developer.batterysmart.in/
+    status: 0
+  checked: '2026-08-06'
