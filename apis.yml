@@ -24,7 +24,7 @@ x-source: harvest:secondary-market
 x-legal-entity: Upgrid Solutions Private Limited
 x-tier: profiled
 x-tier-reason: enrichment-pass-no-api-surface
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-08-06'
 modified: '2026-08-06'
 tags:
