@@ -17,6 +17,17 @@ description: 'Battery Smart is India''s largest battery-swapping network for ele
   api.upgrid.in that self-identifies as the "Battery Smart API". As of this profile the
   company publishes no developer portal, API reference, SDK, webhook catalog or
   machine-readable specification of any kind.'
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://www.batterysmart.in/_next/static/media/logo.9f0b8870.webp
 url: https://raw.githubusercontent.com/api-evangelist/battery-smart/refs/heads/main/apis.yml
 x-type: company
