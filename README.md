@@ -64,8 +64,83 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Battery Smart is India's largest battery-swapping network for electric two- and three-wheelers, founded in 2019 by Pulkit Khurana and Siddharth Sikka and operated from New Delhi by Upgrid Solutions Private Limited and Upgrid Electrilease Private Limited. Local businesses host swap points where a driver exchanges a depleted lithium-ion pack for a charged one in roughly two minutes, paying per swap instead of buying the battery with the vehicle.
+Battery Smart is India's largest battery-swapping network for electric two- and three-wheelers, founded in 2019 by Pulkit Khurana and Siddharth Sikka and operated from New Delhi by Upgrid Solutions Private Limited and Upgrid Electrilease Private Limited. It runs an asset-light, partner-led model: local businesses — kirana stores, petrol pumps and neighbourhood shops — host swap points where a driver exchanges a depleted lithium-ion pack for a charged one in roughly two minutes and pays per swap instead of buying the battery with the vehicle, which removes the single largest cost from an electric two- or three-wheeler. The network is concentrated in Delhi NCR, Mumbai, Bengaluru, Hyderabad, Jaipur and Lucknow, and the company has raised across eleven rounds including a USD 65 million Series B led by LeapFrog Investments with MUFG Bank, Panasonic, Ecosystem Integrity Fund, Blume Ventures and British International Investment participating, plus a USD 15 million debt round with Mirova in April 2026. Battery Smart's software ships only as end-user Android applications — Battery Smart Driver and Battery Smart Partner — backed by a production API host at api.upgrid.in that self-identifies as the "Battery Smart API". As of this profile the company publishes no developer portal, API reference, SDK, webhook catalog or machine-readable specification of any kind.
 
-As of this profile, Battery Smart publishes **no public API, developer portal, API reference, SDK or machine-readable specification**. Its software ships only as the Battery Smart Driver and Battery Smart Partner Android apps, backed by an undocumented production API host at `api.upgrid.in`.
+**Areas:** Company · Battery Swapping · Electric Vehicles · EV Infrastructure · Battery as a Service · Energy · Clean Energy · Mobility · Two Wheelers · Three Wheelers · Last Mile Delivery · India
 
-- https://www.batterysmart.in/
+## Battery Smart on APIs.io
+
+Everything profiled for Battery Smart is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/battery-smart/](https://apis.io/providers/battery-smart/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Battery Smart Domain Security](https://apis.io/security/battery-smart/battery-smart-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.batterysmart.in/)
+- [Support](https://www.batterysmart.in/contactUs)
+- [Blog](https://www.batterysmart.in/articles)
+- [Terms of service](https://www.batterysmart.in/tnc)
+- [Privacy policy](https://www.batterysmart.in/privacy)
+
+## API Evangelist rating
+
+**Kin Score 10.3** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 49.1 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 21.1 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 11.5** — Energy & Utilities
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/battery-smart/](https://apis.io/providers/battery-smart/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Battery Smart: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/battery-smart/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
